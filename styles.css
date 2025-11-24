@@ -1,0 +1,122 @@
+:root{
+  --bg:#f7f7fb;
+  --card:#ffffff;
+  --accent:#2f80ed;
+  --muted:#7a7a8c;
+  --danger:#e74c3c;
+}
+
+*{box-sizing:border-box;font-family:system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+
+body{
+  margin:0;
+  padding:32px;
+  background:var(--bg);
+  color:#222;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+h1{margin:0 0 8px}
+p{margin:0 0 20px;color:var(--muted)}
+
+.todo-app{
+  width:100%;
+  max-width:560px;
+  background:var(--card);
+  padding:16px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(18,38,63,0.08);
+}
+
+/* form */
+.todo-form{
+  display:flex;
+  gap:8px;
+  margin-bottom:12px;
+}
+#taskInput{
+  flex:1;
+  padding:10px 12px;
+  border:1px solid #e6e6ee;
+  border-radius:8px;
+  font-size:15px;
+}
+#addBtn{
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* controls */
+.todo-controls{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  margin-bottom:12px;
+}
+.filters{display:flex;gap:6px}
+.filter-btn{
+  background:transparent;
+  border:1px solid #ececf2;
+  padding:6px 10px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.actions{display:flex;gap:12px;align-items:center}
+#count{color:var(--muted)}
+.secondary{
+  background:transparent;
+  border:none;
+  color:var(--muted);
+  cursor:pointer;
+}
+
+/* list */
+.task-list{list-style:none;padding:0;margin:0}
+.task-item{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:10px;
+  border-bottom:1px dashed #f0f0f4;
+}
+.task-left{display:flex;align-items:center;gap:10px;flex:1}
+.check{
+  width:18px;height:18px;border-radius:4px;border:1px solid #d9d9e6;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;
+}
+.check.checked{background:var(--accent);color:#fff;border-color:var(--accent)}
+.task-text{font-size:15px}
+.task-text.completed{color:var(--muted);text-decoration:line-through}
+
+/* delete */
+.delete-btn{background:transparent;border:none;color:var(--danger);cursor:pointer}
+
+/* floating icons */
+.whatsapp-fab, .facebook-fab{
+  position:fixed;
+  bottom:14px;
+  right:20px;
+  text-decoration:none;
+  width:46px;height:46px;border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;color:#fff;
+  box-shadow:0 6px 18px rgba(18,38,63,0.12);
+}
+.whatsapp-fab{background:#25d366; right:20px}
+.facebook-fab{background:#1877f2; right:80px}
+.whatsapp-fab i, .facebook-fab i{font-size:18px}
+
+/* responsive */
+@media (max-width:480px){
+  body{padding:16px}
+  .todo-app{padding:12px}
+  .whatsapp-fab, .facebook-fab{width:42px;height:42px}
+}

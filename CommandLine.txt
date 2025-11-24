@@ -1,0 +1,23 @@
+cd (change directory)
+cd .. // return one step before
+
+dir (lister le contenu d'un dossier)
+
+cls(supprimer historique des commandes)
+
+mkdir folderName (créer un dossier)
+rmdir(supprime un dossier)
+
+
+touch index.html // sur linux pour créer des fichiers 
+type filename.ext (read the content)
+echo > index.html (créer des fichier sous windows )
+
+echo "hello" > doc.txt (replace the old content )
+echo world >> doc.txt (append the new content and keep the previous)
+
+explorer . (ouvrir exploiteur de fichiers )
+
+
+
+FavIcon
