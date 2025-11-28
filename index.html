@@ -14,7 +14,7 @@
 <body>
    
 
-
+<!--
         <h1>Hello world</h1>
         <h1>Hello world</h1>
     </marquee>
@@ -37,10 +37,12 @@
  <p>
     <h1 style="color: red;">Hello</h1> c'est une balise 
  </p>
+-->
 <!--Entities-->
+<!--
 <h1>Hello &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World</h1>
  &lt;h1&gt; &lt;/h1&gt;
-
+-->
 
 
 
@@ -48,7 +50,7 @@
  <!--Ordonné-->
 
 
- <!--Non Ordonné-->
+ <!--Non Ordonné
  
  <ul type="circle">
      <li>HTML</li>
@@ -77,6 +79,132 @@
 <a href="mailto:hello@gomycode.co">hello@gomycode.co</a>
 <a href="tel:2127090809">+2127090809 </a>
 <a href="./Masterclass-Creer-des-Visuels-avec-lIA-Generative-LLM-et-Multimodaux.pdf" download="myFile">Download Now</a>
+
+-->
+<h1 style="text-align: center;">Learn Forms </h1>
+
+
+<!--Product Table -->
+
+
+
+
+  <table border="3" style="text-align: center;">
+    <thead>
+      <tr>
+  
+        <th>Id</th>
+        <th>Product name</th>
+        <th>Price</th>
+        <th>Description</th>
+       
+        <th>Actions</th>
+      </tr>
+      
+    </thead>
+  
+     <tbody>
+         <tr >
+          <td>ffjo1123</td>
+          <td>TV</td>
+          <td>2000 MAD</td>
+          <td>tv description Test </td>
+          
+          <td>
+            <button>Voir</button>
+            <button>Modifier </button>
+            <button>Supprimer </button>
+          </td>
+  
+         </tr>
+         <tr>
+          <td>ffjo1123</td>
+          <td>TV</td>
+          <td>2000 MAD</td>
+          <td>tv description Test </td>
+          
+          <td>
+            <button>Voir</button>
+            <button>Modifier </button>
+            <button>Supprimer </button>
+          </td>
+  
+         </tr>
+         <tr>
+          <td>ffjo1123</td>
+          <td>TV</td>
+          <td>2000 MAD</td>
+          <td>tv description Test </td>
+          
+          <td>
+            <button>Voir</button>
+            <button>Modifier </button>
+            <button>Supprimer </button>
+          </td>
+  
+         </tr>
+     </tbody>
+  
+  </table>
+
+
+
+
+<marquee behavior="" direction="">
+
+</marquee>
+
+
+<mark>
+  Hello
+</mark>
+
+<marquee behavior="" direction="">
+  <h1 style="text-align: center;"></h1>
+</marquee>
+<marquee behavior="alternate" direction="left" scrollamount="200">
+  <ul>
+    <li>Test</li>
+    <li>Test2</li>
+  </ul>
+</marquee>
+
+<hr>
+
+
+<form action="" method="get"  >
+ <label for="">Username : </label>
+<!-- text email url search  -->
+<input type="search" name="" id="" required >
+
+<!--Date -->
+
+<input type="password" name="" id="" pattern="">
+
+<input type="datetime-local" name="" id="">
+<button>Search</button>
+
+<select name="" id="" multiple>
+  <option value="">13/12/2006 12:00</option>
+  <option value="">15/12/2006 12:00</option>
+  <option value="">10/12/2006 01:00</option>
+</select>
+
+
+<input type="color" name="" id="cls">
+
+<button type="submit">Click</button>
+<button type="reset">Annuler</button>
+
+<script>
+
+  document.querySelector("#cls").oninput=(ev)=>{
+
+    document.body.style.background=ev.target.value;
+  }
+
+</script>
+</form>
 
 
 </body>
